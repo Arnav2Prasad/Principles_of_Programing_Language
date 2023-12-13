@@ -15,7 +15,7 @@ public:
         }
 
         balance += amount;
-        cout << "Deposit successful. New balance: " << balance << std::endl;
+        cout << "Deposit successful. New balance: " << balance << endl;
     }
 
     void withdraw(float amount) {
@@ -28,11 +28,11 @@ public:
         }
 
         balance -= amount;
-        cout << "Withdrawal successful. New balance: " << balance << std::endl;
+        cout << "Withdrawal successful. New balance: " << balance << endl;
     }
 
     void checkBalance() {
-        cout << "Current balance: " << balance << std::endl;
+        cout << "Current balance: " << balance << endl;
     }
 };
 
@@ -48,9 +48,9 @@ int main() {
 
         account.withdraw(-50);
     } catch (const invalid_argument& e) {
-        cerr << "Error: " << e.what() << std::endl;
+        cerr << "Error: " << e.what() << endl;
     } catch (const runtime_error& e) {
-        cerr << "Error: " << e.what() << std::endl;
+        cerr << "Error: " << e.what() << endl;
     }
 
     return 0;
