@@ -23,29 +23,29 @@ class Animal {
     }
 
     void printAnimal() {
-        cout << "Animal Details:" << std::endl;
-        cout << "Name: " << name << std::endl;
-        cout << "Age: " << age << " years" << std::endl;
-        cout << "Species: " << species << std::endl;
+        cout << "Animal Details:" << endl;
+        cout << "Name: " << name << endl;
+        cout << "Age: " << age << " years" << endl;
+        cout << "Species: " << species << endl;
     }
 };
 
 int main() {
     
     Animal cat; 
-    std::cout << "Details of Cat (Default Constructor):" << std::endl;
+    cout << "Details of Cat (Default Constructor):" << endl;
     cat.printAnimal();
     cout << "\n";
 
     Animal dog("Buddy", 3, "Dog");
-    std::cout << "Details of Dog (Parameterized Constructor):" << std::endl;
+    cout << "Details of Dog (Parameterized Constructor):" << endl;
     dog.printAnimal();
     cout << "\n";
 
     Animal monkey;
-    std::cout << "Enter details for Monkey:" << std::endl;
+    cout << "Enter details for Monkey:" << endl;
     monkey.readData();
-    std::cout << "\nDetails of Monkey:" << std::endl;
+    cout << "\nDetails of Monkey:" << endl;
     monkey.printAnimal();
 
 
